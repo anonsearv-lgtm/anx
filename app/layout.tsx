@@ -1,0 +1,11 @@
+import type { Metadata } from 'next';
+import './styles.css';
+
+export const metadata: Metadata = {
+  title: 'ANONYMOUX STUDIO',
+  description: 'Realtime AI creative studio powered by Decart.',
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/></head><body>{children}<script type="module" src="/app.js"></script></body></html>;
+}
